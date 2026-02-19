@@ -1,0 +1,12 @@
+[
+  {"srn": 1, "name": "Harshvardhan", "age": 21, "marks": 98},
+  {"srn": 2, "name": "Aadinath", "age": 2, "marks": 99},
+  {"srn": 3, "name": "Shubham", "age": 20, "marks": 100},
+  {"srn": 4, "name": "Rushikesh", "age": 19, "marks": 89},
+  {"srn": 5, "name": "Shriram", "age": 21, "marks": 100},
+  {"srn": 6, "name": "Pavan", "age": 10, "marks": 99},
+  {"srn": 7, "name": "Jivesh", "age": 18, "marks": 98},
+  {"srn": 8, "name": "Samej", "age": 28, "marks": 79},
+  {"srn": 9, "name": "Chetan", "age": 12, "marks": 86},
+  {"srn": 10, "name": "Abhishekh", "age": 0.2, "marks": 95}
+]

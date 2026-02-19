@@ -1,0 +1,17 @@
+l1= [7,9,"harry"]
+print(l1[0])
+print(l1[1])
+print(l1[0:2])
+print(l1[1:2])
+l2= [23,66,5,7,3,77,5,8,9]
+l2.sort()
+print(l2)
+l2.reverse()
+print(l2)
+l2.append(99)
+print(l2)
+l2.insert(3,484)
+print(l2)
+print(l2.pop(3))
+l2.remove(99)
+print(l2)

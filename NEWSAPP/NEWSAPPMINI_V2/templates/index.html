@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI News Explorer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+
+    <div class="toggle-btn" id="themeToggle">🌙 Dark Mode</div>
+
+    <div class="container">
+        <div class="title">AI News Explorer</div>
+
+        <div class="search-area">
+            <input type="text" id="topic" placeholder="Search topic…">
+            
+            <select id="sort">
+                <option value="publishedAt">Latest</option>
+                <option value="popularity">Popularity</option>
+                <option value="relevancy">Relevancy</option>
+            </select>
+
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div id="loader">
+            <div class="spinner"></div>
+        </div>
+
+        <div id="newsContainer" class="news-container"></div>
+    </div>
+
+    <script src="/static/main.js"></script>
+</body>
+</html>

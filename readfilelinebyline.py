@@ -1,0 +1,8 @@
+f=open("io.txt",'r')
+
+
+for line in f:
+    print(line)
+
+f.close()
+

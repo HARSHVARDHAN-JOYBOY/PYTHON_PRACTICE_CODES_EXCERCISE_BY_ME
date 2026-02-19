@@ -1,0 +1,20 @@
+s ={3,4,5,6,6}
+d={3,5,7,8}
+# print(s)
+
+# s.add(324)
+# print(s)
+# s.remove(324)
+# print(s)
+# s.discard(6)
+# print(s)
+# s.pop()
+# print(s)
+print(s)
+print(d)
+c=s.union(d)
+print(c)
+e=s.intersection(d)
+print(e)
+f=s.difference(d)
+print(f)

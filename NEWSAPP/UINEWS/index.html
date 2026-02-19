@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsExplorer - Discover News</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sci-Fi Background -->
+    <div class="background"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo-icon">◉</div>
+                <h1 class="title">NewsExplorer</h1>
+            </div>
+            <button class="contact-btn" onclick="scrollToFooter()">Contact Us</button>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+        <!-- Hero Section with Search -->
+        <section class="search-section">
+            <h2 class="search-title">Explore Global News</h2>
+            <p class="search-subtitle">Discover trending stories across the world</p>
+            
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="Search news topic..."
+                    onkeypress="handleKeyPress(event)"
+                >
+                <button class="search-btn" onclick="searchNews()">
+                    <span class="search-icon">🔍</span>
+                    Search
+                </button>
+            </div>
+        </section>
+
+        <!-- Search History -->
+        <section class="history-section">
+            <h3 class="history-title">Recent Searches</h3>
+            <div class="history-container" id="historyContainer">
+                <p class="no-history">No searches yet. Start exploring!</p>
+            </div>
+        </section>
+
+        <!-- News Results -->
+        <section class="news-section">
+            <div class="news-container" id="newsContainer">
+                <p class="loading-message">Ready to search. Enter a topic above!</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>NewsExplorer</h4>
+                <p>Your gateway to global news and trending stories</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#search">Search</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Information</h4>
+                <p>Email: <a href="mailto:info@newsexplorer.com">info@newsexplorer.com</a></p>
+                <p>Phone: <a href="tel:+1-800-123-4567">+1 (800) 123-4567</a></p>
+                <p>Address: 123 News Street, Media City, MC 12345</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 NewsExplorer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

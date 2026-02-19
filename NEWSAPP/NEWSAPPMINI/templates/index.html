@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>News Reader App</title>
+
+  <!-- Flask correctly resolves the static folder -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>📰 News Reader</h1>
+
+    <div class="search">
+      <input id="topic" type="text" placeholder="Enter topic (e.g., India, Technology)" />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="status" class="hidden">Loading...</div>
+    <div id="newsContainer"></div>
+  </div>
+
+  <!-- Flask correctly links the JavaScript file -->
+  <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
